@@ -1,0 +1,6 @@
+import hashlib
+  
+str="priya"
+result = hashlib.md5(str.digest())
+  
+     print("The byte equivalent of hash is : ", end ="")
