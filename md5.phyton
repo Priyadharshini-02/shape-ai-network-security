@@ -1,6 +1,11 @@
 import hashlib
-  
-str="priya"
-result = hashlib.md5(str.digest())
-  
-     print("The byte equivalent of hash is : ", end ="")
+def main():
+    text="priya"
+    textUtf8=text.encode("utf-8")
+
+    hash=hashlib.md5(textUtf8)
+    hexa=hash.hexdigest()
+    print(hexa)
+    return
+main()
+#output:0b1c8bc395a9588a79cd3c191c22a6b4
